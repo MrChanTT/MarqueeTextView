@@ -24,15 +24,23 @@ public class MarqueeTextView extends TextView {
         super(context, attrs, defStyleAttr);
     }
 
-
+    /**
+     * 无需获取焦点就滚动显示
+     * */
     @Override
     public boolean isFocused() {
         return true;
     }
 
+    /**
+     * 设置省略号的位置
+     * **/
     @Override
     public void setEllipsize(TextUtils.TruncateAt where) {
-        where = TextUtils.TruncateAt.MARQUEE;
+        where = TextUtils.TruncateAt.MARQUEE;//跑马灯
+//        TextUtils.TruncateAt.END;
+//        TextUtils.TruncateAt.START;
+//        TextUtils.TruncateAt.MIDDLE;
         super.setEllipsize(where);
     }
 

@@ -10,6 +10,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         marqueeTextView = (MarqueeTextView) findViewById(R.id.martv);
-        marqueeTextView.setText("啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦");
+        marqueeTextView.setText("                                     啦啦啦啦啦啦");
     }
 }
